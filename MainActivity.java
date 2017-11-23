@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             System.out.print(itr.next() + " ");
         }
         System.out.print("\n");                                //This prints a blank line
+        System.out.println("Here is your output: ");
         System.out.println(al.get(randomItem(al.size())));      //This will output the random number that is chosen by the randomItem
     }
 
