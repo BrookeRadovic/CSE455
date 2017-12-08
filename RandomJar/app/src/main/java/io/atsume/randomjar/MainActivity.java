@@ -14,14 +14,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ////////////////  MyLists button function  ////////////////////////////////
-        Button log_in_main = (Button) findViewById(R.id.main_button1_mylists);
-        log_in_main.setOnClickListener(new View.OnClickListener() {
+        Button main_button1 = (Button) findViewById(R.id.main_button1_mylists);
+        main_button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent( MainActivity.this, mylists.class));
             }
         });
 
+        ////////////////  Settings button function  ////////////////////////////////
+        Button main_button2 = (Button) findViewById(R.id.main_button2_settings);
+        main_button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent( MainActivity.this, settings.class));
+            }
+        });
 
     }
 }

@@ -16,7 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mylists"></activity>
+        <activity android:name=".mylists"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name=".settings" />
+        <activity android:name=".helpActivity" />
+        <activity android:name=".credits" />
+        <activity android:name=".tempActivity"
+            android:windowSoftInputMode="adjustPan"
+            >
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="20sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempEditText"
+        android:layout_alignParentRight="true"
+        android:hint="Enter..."
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        />
+
+</RelativeLayout>
