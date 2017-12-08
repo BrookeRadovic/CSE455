@@ -19,7 +19,7 @@ public class mylists extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mylists);
 
-            Button randomButton = (Button) findViewById(R.id.decisionButton);
+            Button decideButton = (Button) findViewById(R.id.decisionButton);
             ArrayAdapter<String> adapter;
             String[] mTestArray = getResources().getStringArray(R.array.testArray);
 
@@ -37,7 +37,7 @@ public class mylists extends AppCompatActivity {
                 }
         );
 
-        randomButton.setOnClickListener(
+        decideButton.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
                         String[] mTestArray = getResources().getStringArray(R.array.testArray);

@@ -10,10 +10,25 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
 
 public class tempActivity extends AppCompatActivity {
 
-    //    @Override
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_temp);
+/*
+        ArrayAdapter<String> adapter;
+        String[] mtempList = getResources().get(R.layout.listitems);
+
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mTestArray);
+        ListView myListView = (ListView) findViewById(R.id.myListView);
+        myListView.setAdapter(adapter);
+*/
+    }
+        //    @Override
+
     public View getView(int position, View view, ViewGroup parent) {
         ViewHolder viewHolder;
         if (view == null) {
@@ -46,12 +61,5 @@ public class tempActivity extends AppCompatActivity {
         return view;
     }
 
-
-/*
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_temp);
-    }
-*/
 
 }
